@@ -4,7 +4,6 @@ public class Passenger {
 
 	public Passenger(String name) {
 		this.name = name;
-		this.country = new Country("USA", "US");
 	}
 
 	public String getName() {
@@ -13,6 +12,10 @@ public class Passenger {
 
 	public Country getCountry() {
 		return country;
+	}
+
+	public void setCountry(Country country) {
+		this.country = country;
 	}
 
 }
