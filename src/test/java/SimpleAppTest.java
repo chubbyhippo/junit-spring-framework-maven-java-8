@@ -1,7 +1,6 @@
-import static org.junit.Assert.*;
-
-import org.junit.Before;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class SimpleAppTest {
@@ -11,7 +10,7 @@ public class SimpleAppTest {
 
 	private Passenger expectedPassenger;
 
-	@Before
+	@BeforeEach
 	public void setUp() {
 		context = new ClassPathXmlApplicationContext(
 				APPLICATION_CONTEXT_XML_FILE_NAME);
