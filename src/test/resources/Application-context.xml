@@ -8,6 +8,7 @@
     <bean id="passenger" class="Passenger">
         <constructor-arg name="name" value="John Smith"/>
         <property name="country" ref="country"/>
+        <property name="isRegistered" value="false"/>
     </bean>
 
     <bean id="country" class="Country">
